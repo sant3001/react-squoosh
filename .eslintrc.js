@@ -4,7 +4,6 @@ module.exports = {
     es2020: true,
   },
   "extends": [
-    "airbnb",
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/react",
@@ -25,13 +24,12 @@ module.exports = {
     "import",
     "prettier",
     "@typescript-eslint",
-    "jest"
   ],
   "rules": {
     "prettier/prettier": ["error"],
     "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/prefer-interface": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
     "react/destructuring-assignment": "off",
     "react/prop-types": ["off", {}],
     "react-hooks/rules-of-hooks": "error",

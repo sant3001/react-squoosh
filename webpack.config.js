@@ -17,6 +17,7 @@ module.exports = {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-react', '@babel/preset-typescript', '@babel/preset-env'],
+              plugins: ['transform-class-properties'],
             },
           },
         ],
@@ -38,6 +39,7 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
   },
+  target: 'node',
   output: {
     path: path.resolve(__dirname, 'dist/src'),
     filename: 'index.js',

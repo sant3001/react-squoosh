@@ -1,0 +1,1 @@
+export { useSquoosh } from './useSquoosh';
