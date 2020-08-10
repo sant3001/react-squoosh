@@ -1,6 +1,6 @@
 {
   "name": "react-squoosh",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "React Squoosh is an image compression utility for React that uses WebAssembly.",
   "main": "src/index.js",
   "unpkg": "src/index.js",

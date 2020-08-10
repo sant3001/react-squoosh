@@ -11,6 +11,11 @@ import { useSquoosh, FitMethod } from 'react-squoosh';
 
 const App = () => {
   const inputRef = useRef<HTMLInputElement>(null);
+  const opts = {
+    wasmFileUrls: { resizeWasmUrl, optimizeWasmUrl },
+    resizeOpts: { width: 300, height: 300, fitMethod: FitMethod.Contain }
+  };
+  
   const { loading, imgSrcPreview, squooshFile } = useSquoosh(opts);
   
   const onChangeImage = () => {
